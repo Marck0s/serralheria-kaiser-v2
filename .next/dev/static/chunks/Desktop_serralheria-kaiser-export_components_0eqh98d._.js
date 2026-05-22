@@ -1,0 +1,1228 @@
+(globalThis["TURBOPACK"] || (globalThis["TURBOPACK"] = [])).push([typeof document === "object" ? document.currentScript : undefined,
+"[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Navbar
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/image.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/menu.mjs [app-client] (ecmascript) <export default as Menu>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/x.mjs [app-client] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/phone.mjs [app-client] (ecmascript) <export default as Phone>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+;
+function Navbar() {
+    _s();
+    const [open, setOpen] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [scrolled, setScrolled] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Navbar.useEffect": ()=>{
+            const onScroll = {
+                "Navbar.useEffect.onScroll": ()=>setScrolled(window.scrollY > 60)
+            }["Navbar.useEffect.onScroll"];
+            window.addEventListener("scroll", onScroll);
+            return ({
+                "Navbar.useEffect": ()=>window.removeEventListener("scroll", onScroll)
+            })["Navbar.useEffect"];
+        }
+    }["Navbar.useEffect"], []);
+    const links = [
+        {
+            href: "#servicos",
+            label: "Serviços"
+        },
+        {
+            href: "#sobre",
+            label: "Sobre"
+        },
+        {
+            href: "#parceiros",
+            label: "Clientes"
+        },
+        {
+            href: "#depoimentos",
+            label: "Depoimentos"
+        },
+        {
+            href: "#contato",
+            label: "Contato"
+        }
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+        className: `fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${scrolled ? "bg-black/95 backdrop-blur-md shadow-lg shadow-black/50 py-3" : "bg-transparent py-5"}`,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-7xl mx-auto px-5 flex items-center justify-between",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "#",
+                        className: "flex items-center gap-3",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                            src: "/assets/logo/logokaiser.jpeg",
+                            alt: "Serralheria Kaiser",
+                            width: 120,
+                            height: 48,
+                            className: "h-10 w-auto object-contain",
+                            unoptimized: true
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "hidden md:flex items-center gap-8",
+                        children: links.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: l.href,
+                                className: "nav-link",
+                                children: l.label
+                            }, l.href, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                                lineNumber: 48,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "hidden md:flex items-center gap-4",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "tel:+5511977988716",
+                                className: "flex items-center gap-2 text-sm font-medium text-[#c8a84b]",
+                                style: {
+                                    fontFamily: "var(--font-inter)"
+                                },
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                        size: 14
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                                        lineNumber: 61,
+                                        columnNumber: 13
+                                    }, this),
+                                    "(11) 97798-8716"
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                                lineNumber: 56,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "https://wa.me/5511977988716",
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                className: "btn-primary text-sm",
+                                children: "Orçamento Grátis"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                                lineNumber: 64,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                        lineNumber: 55,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                        onClick: ()=>setOpen(!open),
+                        className: "md:hidden text-white p-2",
+                        "aria-label": "Menu",
+                        children: open ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {
+                            size: 24
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                            lineNumber: 80,
+                            columnNumber: 19
+                        }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {
+                            size: 24
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                            lineNumber: 80,
+                            columnNumber: 37
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                        lineNumber: 75,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                lineNumber: 32,
+                columnNumber: 7
+            }, this),
+            open && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "md:hidden bg-black/98 border-t border-white/10 px-5 py-6 flex flex-col gap-5",
+                children: [
+                    links.map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: l.href,
+                            className: "nav-link text-base",
+                            onClick: ()=>setOpen(false),
+                            children: l.label
+                        }, l.href, false, {
+                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                            lineNumber: 88,
+                            columnNumber: 13
+                        }, this)),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                        href: "https://wa.me/5511977988716",
+                        target: "_blank",
+                        rel: "noopener noreferrer",
+                        className: "btn-primary text-center mt-2",
+                        children: "Solicitar Orçamento"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                        lineNumber: 97,
+                        columnNumber: 11
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+                lineNumber: 86,
+                columnNumber: 9
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Navbar.tsx",
+        lineNumber: 25,
+        columnNumber: 5
+    }, this);
+}
+_s(Navbar, "jPnA7EYNjCLn3fxFn1srHOcQMBA=");
+_c = Navbar;
+var _c;
+__turbopack_context__.k.register(_c, "Navbar");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Hero
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/chevron-down.mjs [app-client] (ecmascript) <export default as ChevronDown>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+function Hero() {
+    _s();
+    const [loaded, setLoaded] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const videoRef = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useRef"])(null);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "Hero.useEffect": ()=>{
+            const timer = setTimeout({
+                "Hero.useEffect.timer": ()=>setLoaded(true)
+            }["Hero.useEffect.timer"], 200);
+            return ({
+                "Hero.useEffect": ()=>clearTimeout(timer)
+            })["Hero.useEffect"];
+        }
+    }["Hero.useEffect"], []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        className: "relative h-screen min-h-[600px] flex items-center justify-center overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "absolute inset-0 z-0",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
+                        ref: videoRef,
+                        autoPlay: true,
+                        muted: true,
+                        loop: true,
+                        playsInline: true,
+                        poster: "/assets/images/background-main.png",
+                        className: "w-full h-full object-cover",
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("source", {
+                            src: "https://videos.pexels.com/video-files/4480946/4480946-sd_640_360_25fps.mp4",
+                            type: "video/mp4"
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                        lineNumber: 18,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#c8a84b] to-transparent"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative z-10 max-w-5xl mx-auto px-5 text-center",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `inline-flex items-center gap-2 border border-[#c8a84b]/50 px-4 py-1.5 text-[#c8a84b] text-xs tracking-widest uppercase mb-6 transition-all duration-700 ${loaded ? "opacity-100" : "opacity-0"}`,
+                        style: {
+                            fontFamily: "var(--font-inter)"
+                        },
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "w-1.5 h-1.5 rounded-full bg-[#c8a84b] inline-block"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                                lineNumber: 48,
+                                columnNumber: 11
+                            }, this),
+                            "Atendimento Emergencial 24h",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "w-1.5 h-1.5 rounded-full bg-[#c8a84b] inline-block"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                                lineNumber: 50,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h1", {
+                        className: `section-title text-white mb-4 transition-all duration-700 delay-100 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
+                        style: {
+                            lineHeight: "1.1"
+                        },
+                        children: [
+                            "Segurança e Resistência",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                                lineNumber: 61,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-[#c8a84b]",
+                                children: "em Aço e Ferro"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                                lineNumber: 62,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                        lineNumber: 54,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: `text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed transition-all duration-700 delay-200 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
+                        style: {
+                            fontFamily: "var(--font-inter)",
+                            fontWeight: 300
+                        },
+                        children: "Fabricação, instalação e manutenção de portas de aço automáticas e manuais, portões e estruturas metálicas para toda a Grande São Paulo."
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                        lineNumber: 66,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `flex flex-col sm:flex-row gap-4 justify-center transition-all duration-700 delay-300 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "https://wa.me/5511977988716",
+                                target: "_blank",
+                                rel: "noopener noreferrer",
+                                className: "btn-primary inline-block",
+                                children: "Solicitar Orçamento Grátis"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                                lineNumber: 82,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "#servicos",
+                                className: "btn-outline inline-block",
+                                children: "Nossos Serviços"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                                lineNumber: 90,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                        lineNumber: 77,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `mt-14 grid grid-cols-3 gap-4 max-w-2xl mx-auto transition-all duration-700 delay-500 ${loaded ? "opacity-100" : "opacity-0"}`,
+                        children: [
+                            {
+                                n: "+10",
+                                label: "Anos de Experiência"
+                            },
+                            {
+                                n: "+2000",
+                                label: "Projetos Realizados"
+                            },
+                            {
+                                n: "24h",
+                                label: "Atendimento Emergencial"
+                            }
+                        ].map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "border-l border-[#c8a84b]/30 pl-4 text-left",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-2xl md:text-3xl font-bold text-[#c8a84b]",
+                                        style: {
+                                            fontFamily: "var(--font-oswald)"
+                                        },
+                                        children: s.n
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                                        lineNumber: 107,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "text-xs text-gray-400 mt-0.5 leading-tight",
+                                        style: {
+                                            fontFamily: "var(--font-inter)"
+                                        },
+                                        children: s.label
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                                        lineNumber: 113,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, s.n, true, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                                lineNumber: 106,
+                                columnNumber: 13
+                            }, this))
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                        lineNumber: 96,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: "#servicos",
+                className: "absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-white/40 hover:text-[#c8a84b] transition-colors animate-bounce",
+                "aria-label": "Ver serviços",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$chevron$2d$down$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ChevronDown$3e$__["ChevronDown"], {
+                    size: 28
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                    lineNumber: 130,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+                lineNumber: 125,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Hero.tsx",
+        lineNumber: 15,
+        columnNumber: 5
+    }, this);
+}
+_s(Hero, "r33c5Y1DIaEdinkP02zrorCvEOU=");
+_c = Hero;
+var _c;
+__turbopack_context__.k.register(_c, "Hero");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Partners
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+"use client";
+;
+const partners = [
+    {
+        name: "BMG",
+        img: "/assets/partners/bmg.png"
+    },
+    {
+        name: "Kalunga",
+        img: "/assets/partners/kalunga.png"
+    },
+    {
+        name: "Lojas Mel",
+        img: "/assets/partners/lojasmel.png"
+    },
+    {
+        name: "Mercantil",
+        img: "/assets/partners/mercantil.png"
+    },
+    {
+        name: "Pernambucanas",
+        img: "/assets/partners/pernambucanas.png"
+    },
+    {
+        name: "Petz",
+        img: "/assets/partners/petz.png"
+    },
+    {
+        name: "Poupatempo",
+        img: "/assets/partners/poupatempo.png"
+    },
+    {
+        name: "Sumire",
+        img: "/assets/partners/sumire.png"
+    }
+];
+function Partners() {
+    const doubled = [
+        ...partners,
+        ...partners
+    ];
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
+        id: "parceiros",
+        className: "py-20 bg-[#0a0a0a] overflow-hidden",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-7xl mx-auto px-5 mb-10",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-[#c8a84b] text-xs tracking-widest uppercase mb-3",
+                        style: {
+                            fontFamily: "var(--font-inter)"
+                        },
+                        children: "Confiança comprovada"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                        lineNumber: 20,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                        className: "section-title text-white",
+                        children: [
+                            "Empresas que ",
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                className: "text-[#c8a84b]",
+                                children: "Confiam"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                                lineNumber: 27,
+                                columnNumber: 24
+                            }, this),
+                            " em Nós"
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                        lineNumber: 26,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "divider-gold"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                        lineNumber: 29,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                        className: "text-gray-400 max-w-xl",
+                        style: {
+                            fontFamily: "var(--font-inter)"
+                        },
+                        children: "Grandes marcas escolheram a Kaiser para garantir segurança e qualidade nas suas unidades."
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "relative",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "flex gap-8 animate-marquee whitespace-nowrap",
+                    children: doubled.map((p, i)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "flex items-center justify-center bg-[#111] border border-white/5 px-8 py-6 min-w-[160px] shrink-0 hover:border-[#c8a84b]/30 transition-colors",
+                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                src: p.img,
+                                alt: p.name,
+                                className: "h-10 w-auto object-contain opacity-60 hover:opacity-100 transition-opacity filter grayscale hover:grayscale-0"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                                lineNumber: 47,
+                                columnNumber: 15
+                            }, this)
+                        }, `${p.name}-${i}`, false, {
+                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                            lineNumber: 43,
+                            columnNumber: 13
+                        }, this))
+                }, void 0, false, {
+                    fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                    lineNumber: 41,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Partners.tsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, this);
+}
+_c = Partners;
+var _c;
+__turbopack_context__.k.register(_c, "Partners");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>Footer
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/share-2.mjs [app-client] (ecmascript) <export default as Share2>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/camera.mjs [app-client] (ecmascript) <export default as Camera>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/mail.mjs [app-client] (ecmascript) <export default as Mail>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/phone.mjs [app-client] (ecmascript) <export default as Phone>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/map-pin.mjs [app-client] (ecmascript) <export default as MapPin>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/send.mjs [app-client] (ecmascript) <export default as Send>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/lucide-react/dist/esm/icons/arrow-right.mjs [app-client] (ecmascript) <export default as ArrowRight>");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+;
+function Footer() {
+    _s();
+    const [email, setEmail] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])("");
+    const [sent, setSent] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        if (email) {
+            setSent(true);
+            setEmail("");
+        }
+    };
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("footer", {
+        className: "bg-[#080808] border-t border-white/5",
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "max-w-7xl mx-auto px-5 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "lg:col-span-1",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                src: "/assets/logo/logokaiser.jpeg",
+                                alt: "Serralheria Kaiser",
+                                className: "h-10 w-auto object-contain mb-4"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 23,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-gray-500 text-sm leading-relaxed mb-5",
+                                style: {
+                                    fontFamily: "var(--font-inter)"
+                                },
+                                children: "Especialistas em portas de aço e serralheria na Grande São Paulo. Qualidade, segurança e atendimento 24h."
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 28,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "flex gap-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://www.facebook.com/people/Portas-de-A%C3%A7o-Kaiser/61574927464934/",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        className: "w-9 h-9 border border-white/10 flex items-center justify-center text-gray-400 hover:border-[#c8a84b] hover:text-[#c8a84b] transition-colors",
+                                        "aria-label": "Facebook",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$share$2d$2$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Share2$3e$__["Share2"], {
+                                            size: 16
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                            lineNumber: 43,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "https://www.instagram.com/serralheria.kaiser0/",
+                                        target: "_blank",
+                                        rel: "noopener noreferrer",
+                                        className: "w-9 h-9 border border-white/10 flex items-center justify-center text-gray-400 hover:border-[#c8a84b] hover:text-[#c8a84b] transition-colors",
+                                        "aria-label": "Instagram",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$camera$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Camera$3e$__["Camera"], {
+                                            size: 16
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                            lineNumber: 52,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                        lineNumber: 45,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                        href: "mailto:portasdeacokaiser@gmail.com",
+                                        className: "w-9 h-9 border border-white/10 flex items-center justify-center text-gray-400 hover:border-[#c8a84b] hover:text-[#c8a84b] transition-colors",
+                                        "aria-label": "E-mail",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                            size: 16
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                            lineNumber: 59,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                        lineNumber: 54,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 35,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                        lineNumber: 22,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "text-white text-sm font-semibold uppercase tracking-widest mb-4",
+                                style: {
+                                    fontFamily: "var(--font-oswald)"
+                                },
+                                children: "Navegação"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 66,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                className: "space-y-2",
+                                children: [
+                                    {
+                                        href: "#servicos",
+                                        label: "Nossos Serviços"
+                                    },
+                                    {
+                                        href: "#sobre",
+                                        label: "Sobre a Kaiser"
+                                    },
+                                    {
+                                        href: "#parceiros",
+                                        label: "Clientes"
+                                    },
+                                    {
+                                        href: "#depoimentos",
+                                        label: "Depoimentos"
+                                    },
+                                    {
+                                        href: "#contato",
+                                        label: "Solicitar Orçamento"
+                                    }
+                                ].map((l)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: l.href,
+                                            className: "text-gray-500 text-sm hover:text-[#c8a84b] transition-colors flex items-center gap-1.5",
+                                            style: {
+                                                fontFamily: "var(--font-inter)"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$right$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowRight$3e$__["ArrowRight"], {
+                                                    size: 12
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                                    lineNumber: 86,
+                                                    columnNumber: 19
+                                                }, this),
+                                                l.label
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                            lineNumber: 81,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, l.href, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                        lineNumber: 80,
+                                        columnNumber: 15
+                                    }, this))
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 72,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                        lineNumber: 65,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "text-white text-sm font-semibold uppercase tracking-widest mb-4",
+                                style: {
+                                    fontFamily: "var(--font-oswald)"
+                                },
+                                children: "Contato"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 96,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                                className: "space-y-3",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        className: "flex items-start gap-2.5 text-sm text-gray-500",
+                                        style: {
+                                            fontFamily: "var(--font-inter)"
+                                        },
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$map$2d$pin$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__MapPin$3e$__["MapPin"], {
+                                                size: 15,
+                                                className: "text-[#c8a84b] mt-0.5 shrink-0"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                                lineNumber: 104,
+                                                columnNumber: 15
+                                            }, this),
+                                            "São Paulo — SP",
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                                lineNumber: 105,
+                                                columnNumber: 29
+                                            }, this),
+                                            "Grande São Paulo"
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                        lineNumber: 103,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "tel:+5511977988716",
+                                            className: "flex items-center gap-2.5 text-sm text-gray-500 hover:text-[#c8a84b] transition-colors",
+                                            style: {
+                                                fontFamily: "var(--font-inter)"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$phone$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Phone$3e$__["Phone"], {
+                                                    size: 15,
+                                                    className: "text-[#c8a84b] shrink-0"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                                    lineNumber: 113,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "(11) 97798-8716"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                            lineNumber: 108,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                        lineNumber: 107,
+                                        columnNumber: 13
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                            href: "mailto:portasdeacokaiser@gmail.com",
+                                            className: "flex items-center gap-2.5 text-sm text-gray-500 hover:text-[#c8a84b] transition-colors",
+                                            style: {
+                                                fontFamily: "var(--font-inter)"
+                                            },
+                                            children: [
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$mail$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Mail$3e$__["Mail"], {
+                                                    size: 15,
+                                                    className: "text-[#c8a84b] shrink-0"
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                                    lineNumber: 123,
+                                                    columnNumber: 17
+                                                }, this),
+                                                "portasdeacokaiser@gmail.com"
+                                            ]
+                                        }, void 0, true, {
+                                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                            lineNumber: 118,
+                                            columnNumber: 15
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                        lineNumber: 117,
+                                        columnNumber: 13
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 102,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                        lineNumber: 95,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h4", {
+                                className: "text-white text-sm font-semibold uppercase tracking-widest mb-4",
+                                style: {
+                                    fontFamily: "var(--font-oswald)"
+                                },
+                                children: "Fique por Dentro"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 132,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                className: "text-gray-500 text-sm leading-relaxed mb-4",
+                                style: {
+                                    fontFamily: "var(--font-inter)"
+                                },
+                                children: "Receba dicas de manutenção, promoções e novidades diretamente no seu e-mail."
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 138,
+                                columnNumber: 11
+                            }, this),
+                            sent ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "bg-[#c8a84b]/10 border border-[#c8a84b]/30 text-[#c8a84b] text-sm px-4 py-3",
+                                style: {
+                                    fontFamily: "var(--font-inter)"
+                                },
+                                children: "✓ Obrigado! Você está cadastrado."
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 145,
+                                columnNumber: 13
+                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("form", {
+                                onSubmit: handleSubmit,
+                                className: "flex",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("input", {
+                                        type: "email",
+                                        value: email,
+                                        onChange: (e)=>setEmail(e.target.value),
+                                        required: true,
+                                        placeholder: "seu@email.com",
+                                        className: "input-field flex-1 text-sm",
+                                        style: {
+                                            borderRight: "none"
+                                        }
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                        lineNumber: 150,
+                                        columnNumber: 15
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                        type: "submit",
+                                        className: "bg-[#c8a84b] text-black px-4 flex items-center justify-center hover:bg-[#a8872e] transition-colors shrink-0",
+                                        "aria-label": "Cadastrar e-mail",
+                                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$send$2e$mjs__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Send$3e$__["Send"], {
+                                            size: 16
+                                        }, void 0, false, {
+                                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                            lineNumber: 164,
+                                            columnNumber: 17
+                                        }, this)
+                                    }, void 0, false, {
+                                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                        lineNumber: 159,
+                                        columnNumber: 15
+                                    }, this)
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                lineNumber: 149,
+                                columnNumber: 13
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                        lineNumber: 131,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: "border-t border-white/5 py-5",
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "max-w-7xl mx-auto px-5 flex flex-col md:flex-row items-center justify-between gap-3",
+                    children: [
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-gray-600 text-xs",
+                            style: {
+                                fontFamily: "var(--font-inter)"
+                            },
+                            children: "© 2026 Portas de Aço e Serralheria Kaiser. Todos os direitos reservados."
+                        }, void 0, false, {
+                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                            lineNumber: 174,
+                            columnNumber: 11
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                            className: "text-gray-700 text-xs",
+                            style: {
+                                fontFamily: "var(--font-inter)"
+                            },
+                            children: [
+                                "Desenvolvido por",
+                                " ",
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                    href: "https://mmcoretech.netlify.app/",
+                                    target: "_blank",
+                                    rel: "noopener noreferrer",
+                                    className: "hover:text-[#c8a84b] transition-colors",
+                                    children: "M&M CoreTech"
+                                }, void 0, false, {
+                                    fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                                    lineNumber: 185,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                            lineNumber: 180,
+                            columnNumber: 11
+                        }, this)
+                    ]
+                }, void 0, true, {
+                    fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                    lineNumber: 173,
+                    columnNumber: 9
+                }, this)
+            }, void 0, false, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+                lineNumber: 172,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/serralheria-kaiser-export/components/Footer.tsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, this);
+}
+_s(Footer, "/dAEu1A8Z9YlA8KpmVr3R5OYnp4=");
+_c = Footer;
+var _c;
+__turbopack_context__.k.register(_c, "Footer");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+"[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx [app-client] (ecmascript)", ((__turbopack_context__) => {
+"use strict";
+
+__turbopack_context__.s([
+    "default",
+    ()=>WhatsAppButton
+]);
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/dist/compiled/react/jsx-dev-runtime.js [app-client] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Desktop/serralheria-kaiser-export/node_modules/next/dist/compiled/react/index.js [app-client] (ecmascript)");
+;
+var _s = __turbopack_context__.k.signature();
+"use client";
+;
+function WhatsAppButton() {
+    _s();
+    const [visible, setVisible] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    const [showTooltip, setShowTooltip] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useState"])(false);
+    (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$index$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["useEffect"])({
+        "WhatsAppButton.useEffect": ()=>{
+            const timer = setTimeout({
+                "WhatsAppButton.useEffect.timer": ()=>{
+                    setVisible(true);
+                    setTimeout({
+                        "WhatsAppButton.useEffect.timer": ()=>setShowTooltip(true)
+                    }["WhatsAppButton.useEffect.timer"], 800);
+                    setTimeout({
+                        "WhatsAppButton.useEffect.timer": ()=>setShowTooltip(false)
+                    }["WhatsAppButton.useEffect.timer"], 4500);
+                }
+            }["WhatsAppButton.useEffect.timer"], 1500);
+            return ({
+                "WhatsAppButton.useEffect": ()=>clearTimeout(timer)
+            })["WhatsAppButton.useEffect"];
+        }
+    }["WhatsAppButton.useEffect"], []);
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+        className: `fixed bottom-6 right-6 z-[999] flex items-center gap-3 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`,
+        children: [
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: `bg-white text-gray-800 text-sm font-medium px-4 py-2 shadow-xl transition-all duration-300 whitespace-nowrap ${showTooltip ? "opacity-100 translate-x-0" : "opacity-0 translate-x-4 pointer-events-none"}`,
+                style: {
+                    fontFamily: "var(--font-inter)"
+                },
+                children: [
+                    "Precisa de ajuda? 💬",
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: "absolute right-[-6px] top-1/2 -translate-y-1/2 w-3 h-3 bg-white rotate-45"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx",
+                        lineNumber: 31,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx",
+                lineNumber: 24,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                href: "https://wa.me/5511977988716?text=Olá! Gostaria de solicitar um orçamento.",
+                target: "_blank",
+                rel: "noopener noreferrer",
+                className: "whatsapp-btn group",
+                "aria-label": "Falar no WhatsApp",
+                onMouseEnter: ()=>setShowTooltip(true),
+                onMouseLeave: ()=>setShowTooltip(false),
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "whatsapp-ring animate-pulse-ring"
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx",
+                        lineNumber: 45,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                        className: "whatsapp-ring animate-pulse-ring",
+                        style: {
+                            animationDelay: "0.6s"
+                        }
+                    }, void 0, false, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx",
+                        lineNumber: 46,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                        viewBox: "0 0 24 24",
+                        className: "w-7 h-7 fill-white relative z-10",
+                        xmlns: "http://www.w3.org/2000/svg",
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx",
+                                lineNumber: 56,
+                                columnNumber: 11
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Desktop$2f$serralheria$2d$kaiser$2d$export$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                d: "M12 0C5.373 0 0 5.373 0 12c0 2.115.553 4.104 1.522 5.83L0 24l6.346-1.501A11.953 11.953 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.028-1.38l-.36-.214-3.727.882.897-3.643-.235-.375A9.818 9.818 0 1112 21.818z"
+                            }, void 0, false, {
+                                fileName: "[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx",
+                                lineNumber: 57,
+                                columnNumber: 11
+                            }, this)
+                        ]
+                    }, void 0, true, {
+                        fileName: "[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx",
+                        lineNumber: 51,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx",
+                lineNumber: 35,
+                columnNumber: 7
+            }, this)
+        ]
+    }, void 0, true, {
+        fileName: "[project]/Desktop/serralheria-kaiser-export/components/WhatsAppButton.tsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, this);
+}
+_s(WhatsAppButton, "n+/M1tpy5sXglFpJ07EQF2OzXPs=");
+_c = WhatsAppButton;
+var _c;
+__turbopack_context__.k.register(_c, "WhatsAppButton");
+if (typeof globalThis.$RefreshHelpers$ === 'object' && globalThis.$RefreshHelpers !== null) {
+    __turbopack_context__.k.registerExports(__turbopack_context__.m, globalThis.$RefreshHelpers$);
+}
+}),
+]);
+
+//# sourceMappingURL=Desktop_serralheria-kaiser-export_components_0eqh98d._.js.map

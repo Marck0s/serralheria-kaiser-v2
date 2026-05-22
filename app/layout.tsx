@@ -28,6 +28,10 @@ export const metadata: Metadata = {
   },
   robots: { index: true, follow: true },
   alternates: { canonical: "https://serralheriakaiser.com.br" },
+  icons: {
+    icon: "/assets/logo/logokaiser.jpeg",
+    apple: "/assets/logo/logokaiser.jpeg",
+  },
 };
 
 export default function RootLayout({

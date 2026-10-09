@@ -183,12 +183,12 @@ export default function Footer() {
           >
             Desenvolvido por{" "}
             <a
-              href="https://mmcoretech.netlify.app/"
+              href="https://odysen.com.br/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[#c8a84b] transition-colors"
+              className="hover:text-[#8b5cf6] transition-colors"
             >
-              M&M CoreTech
+              Odysen
             </a>
           </p>
         </div>

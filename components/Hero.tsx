@@ -19,8 +19,16 @@ export default function Hero() {
           alt=""
           className="w-full h-full object-cover"
         />
-        {/* Dark gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-black/75 via-black/55 to-black/80" />
+        {/* Dark gradient overlay — mais leve para deixar a foto aparecer */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/45 to-black/85" />
+        {/* Vinheta radial: escurece o centro atrás da mensagem sem esconder a foto */}
+        <div
+          className="absolute inset-0"
+          style={{
+            background:
+              "radial-gradient(ellipse 62% 58% at 50% 45%, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.15) 70%, transparent 100%)",
+          }}
+        />
         {/* Gold accent line bottom */}
         <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-[#c8a84b] to-transparent" />
       </div>
@@ -42,7 +50,7 @@ export default function Hero() {
         <h1
           className={`section-title text-white mb-4 transition-all duration-700 delay-100 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
-          style={{ lineHeight: "1.1" }}
+          style={{ lineHeight: "1.08", textShadow: "0 2px 28px rgba(0,0,0,0.55)" }}
         >
           Segurança e Resistência
           <br />
@@ -51,9 +59,9 @@ export default function Hero() {
 
         {/* Sub */}
         <p
-          className={`text-lg md:text-xl text-gray-300 max-w-2xl mx-auto mb-8 leading-relaxed transition-all duration-700 delay-200 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+          className={`text-lg md:text-xl text-gray-200 max-w-2xl mx-auto mb-8 leading-relaxed transition-all duration-700 delay-200 ${loaded ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
             }`}
-          style={{ fontFamily: "var(--font-inter)", fontWeight: 300 }}
+          style={{ fontFamily: "var(--font-inter)", fontWeight: 300, textShadow: "0 1px 16px rgba(0,0,0,0.6)" }}
         >
           Fabricação, instalação e manutenção de portas de aço automáticas e manuais,
           portões e estruturas metálicas para toda a Grande São Paulo.
